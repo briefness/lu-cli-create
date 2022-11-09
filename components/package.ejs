@@ -1,0 +1,23 @@
+{
+  "name":"<%= name %>",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --mode development",
+    "dev": "vue-cli-service build --mode developmentBuild",
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0",
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
